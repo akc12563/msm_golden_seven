@@ -1,0 +1,14 @@
+<h1>All Directors</h1>
+
+<% @all_directors.each do |the_photo| %>
+<div class="thumbnail">
+<img src="<%= the_photo.image_url %>">
+<p><%=the_photo.name%></p>
+<p><%=the_photo.bio%></p>
+<p><%=the_photo.dob%></p>
+
+<a class="btn btn-default btn-block" href ="/directors/<%=the_photo.id%>">Show Details</a>
+<a class="btn btn-default btn-block" href="/directors/<%= the_photo.id %>/edit_form">Edit</a>
+<a class="btn btn-default btn-block" href="/delete_director/<%=the_photo.id%>">Delete</a>
+</div>
+<% end %>

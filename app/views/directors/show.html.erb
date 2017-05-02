@@ -1,0 +1,14 @@
+<h1>Director details page</h1>
+
+<p>
+<%= @name %>
+</p>
+  <img src= "<%= @pic %>">
+
+
+  <p><%= @bio%> </p>
+  <p><%=@dob%> </p>
+
+<a class="btn btn-default btn-block" href ="/directors">Go back</a>
+<a class="btn btn-default btn-block" href="/directors/<%= @id %>/edit_form">Edit</a>
+<a class="btn btn-default btn-block" href="/delete_director/<%=@id%>">Delete</a>
